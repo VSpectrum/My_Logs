@@ -16,6 +16,10 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
+admin.site.index_title = 'Logs Administration'
+admin.site.site_header = 'Logs Administration'
+admin.site.site_title = 'Logs Admin'
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('notes.urls')),
